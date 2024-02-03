@@ -1,11 +1,3 @@
-export async function generateStaticParams() {
-  const posts = await fetch('https://.../posts').then((res) => res.json())
- 
-  return posts.map((post:any )=> ({
-    id: post.id,
-  }))
-}
-
 
 import SingleProdcut from "@/components/Products/SingleProdcut"
 import ProductInfo from "@/components/Products/ProductInfo"
